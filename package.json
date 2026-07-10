@@ -1,10 +1,11 @@
 {
   "name": "wh-react-datepicker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React DatePicker component with keyboard navigation, accessible, no dependencies",
   "keywords": ["react", "datepicker", "date-picker", "calendar", "accessible"],
   "license": "MIT",
   "type": "module",
+  "author": "Pierre Sourice",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -18,7 +19,7 @@
   },
   "files": ["dist"],
   "scripts": {
-    "build": "tsc -p tsconfig.build.json && vite build",
+    "build": "vite build && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit"
   },
   "peerDependencies": {
