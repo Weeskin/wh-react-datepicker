@@ -37,6 +37,18 @@
   box-shadow: 0 0 0 2px var(--dp-primary);
 }
 
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 2px #ef4444;
+}
+
+.calendarButtonError {
+  border-color: #ef4444;
+}
+
 .calendarButton {
   border: 1px solid #d1d5db;
   border-radius: 0.375rem;

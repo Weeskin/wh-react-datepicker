@@ -170,13 +170,13 @@ export default function DatePicker({ id, label, value, onChange, error, min, max
           aria-haspopup="dialog"
           aria-expanded={isOpen}
           aria-controls={isOpen ? calendarId : undefined}
-          className={styles.input}
+          className={[styles.input, error ? styles.inputError : ""].filter(Boolean).join(" ")}
         />
         <button
           type="button"
           aria-label={isOpen ? "Close calendar" : "Open calendar"}
           onClick={() => { setIsOpen((prev) => !prev) }}
-          className={styles.calendarButton}
+          className={[styles.calendarButton, error ? styles.calendarButtonError : ""].filter(Boolean).join(" ")}
         >
           <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
