@@ -1,5 +1,7 @@
 {
   "extends": "./tsconfig.json",
+  // Les tests ne doivent pas générer de .d.ts dans le package publié
+  "exclude": ["src/__tests__"],
   "compilerOptions": {
     "noEmit": false,
     "allowImportingTsExtensions": false,
